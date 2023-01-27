@@ -24,42 +24,7 @@ def export (res):
             file.write(res[ind] + '\n')
         file.write(res[5])
 
-
-# def delete_item (sn):
-#     with open ('Handbook\data.txt', 'r', encoding='utf-8') as file:
-#         while True:
-#             my_book = file.readline()
-#             if not my_book:
-#                 if not file.readline():
-#                     break   
-            
-#             num = file.readlines()             
-#             ind = [x for x in range(len(num)) if 'Иванов' in num[x]]
-#             print('index', ind)
-
-#             for i, line in enumerate(file.readlines()):
-#                 if line == 'Иванов':
-#                     print('i=', i)
-
-# # lines = [x for x in content if search_str in content]
-
-#             if my_book.rstrip().lower() == sn[0].lower():
-#                 print('фамилию нашла')
-
-#                 # print(file.index(my_book))
-#                 # print(type(my_book.index))
-#                 # file.__getattribute__(my_book)
-#                 # print('s=', int(s))
-#                 # s = file[my_book]
-#                 # print('s=', int(s))
-#                 # linecache.getline(my_book, Nu)
-#                 # s = file.seek(my_book)
-#                 # print(s)
-#                 if file.readline().rstrip().lower() == sn[1].lower():
-#                     print('имя нашла')
-#                     # print(file.readline().index())
-#                 else:
-#                     print('имя не нашла!')
-#         else:
-#             pass
-#             # return 'Таких людей не найдено'
+    with open ('HandbookHome\data.csv', 'a', encoding='utf-8') as file:
+        for ind in range(5):
+            file.write(res[ind] + '\n')
+        file.write(res[5])
